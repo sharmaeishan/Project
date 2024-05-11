@@ -1,26 +1,19 @@
-Factorial Calculation Program:
-This program calculates factorial values using different implementations and compares their performance.
+Project: Square Root Calculation
 
-Project Structure:
-factorial_main.py: Main program to calculate factorial using Python, NumPy, and Cython implementations.
-factorial_operation.py: Module containing functions for factorial calculations.
-factorial_cython.pyx: Cython module for accelerated factorial calculation.
-setup.py: Script for compiling the Cython module.
+Overview:
+This project demonstrates the calculation of square roots using Python's NumPy library and a user-defined function. The code is organized into separate modules for modularity, and Cython is used to optimize the square root calculation for improved performance.
 
+Modules:
+1. main.py: Main program that calculates square roots using NumPy, a user-defined function, and Cython optimization.
+2. square_root_op.py: Contains the user-defined functions for square root calculation using NumPy.
+3. square_root_cython.pyx: Cython module for optimized square root calculation.
+4. setup.py: Script to build the Cython module.
 
 Usage:
-1.Install Cython:
-pip install Cython
-2.Compile the Cython module:
-python setup.py build_ext --inplace
-3.Run the main program:
-python factorial_main.py
+1. Modify the numbers list in main.py to calculate square roots for different inputs.
+2. Run main.py to compare the time taken for square root calculation with and without Cython optimization.
 
-
-Results:
-The program displays the factorial values and the time taken for each implementation:
-
-Factorial using Python: [Factorial Value], Time taken: [Time] seconds
-Factorial using NumPy: [Factorial Value], Time taken: [Time] seconds
-Factorial using Cython: [Factorial Value], Time taken: [Time] seconds
-
+Instructions:
+1. Ensure Python and Cython are installed on your system.
+2. Compile the Cython module using the command: python setup.py build_ext --inplace
+3. Run main.py to execute the square root calculation code and compare the performance between Python and Cython versions.
