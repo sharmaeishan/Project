@@ -1,6 +1,11 @@
+# setup.py
+
 from setuptools import setup
 from Cython.Build import cythonize
+import numpy as np
 
 setup(
-    ext_modules = cythonize("factorial_cython.pyx")
+    ext_modules=cythonize("square_root_cython.pyx"),
+    include_dirs=[np.get_include()]
 )
+ 
